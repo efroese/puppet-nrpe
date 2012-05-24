@@ -28,7 +28,7 @@ class nrpe::params {
   }
 
   case $::operatingsystem {
-    'centos', 'redhat', 'fedora', 'scientific', 'oel': {
+    'centos', 'redhat', 'fedora', 'scientific', 'oel', 'amazon': {
       $nrpe_name    = 'nrpe'
       $nrpe_service = 'nrpe'
       $sysconf      = '/etc/sysconfig/nrpe'
